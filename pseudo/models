@@ -1,0 +1,19 @@
+BookSuper:
+	Title
+	Author
+	Description
+
+BookInstance:
+	Edition
+	# this doesn't seem like the right place for Quality
+
+Class
+	Books*
+
+User:
+	Sell List*
+	Buy List*
+	Name
+	#username?
+	email address
+	# preferred method of contact?
