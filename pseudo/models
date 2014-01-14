@@ -1,19 +1,29 @@
 BookSuper:
-	Title
-	Author
-	Description
+	Title = TextField
+	Author = TextField
+
+EditionedBook:
+	Edition = Integer # what about international versions?
+	Description = TextField
+	DownloadLinks = ManyToMany(DownloadLink)
+
+DownloadLink:
+	URLstring = TextField
 
 BookInstance:
-	Edition
-	# this doesn't seem like the right place for Quality
+	Quality # some special class that has three or four possible values?
+	Price # Double? Integer?
+	# pointed to by User
 
-Class
-	Books*
+Course:
+	Book = ManyToMany(BookInstance)
+	# other useful information? links to other websites, like bruinwalk and classscanner? !!! that UCLA student app network, yo
 
 User:
-	Sell List*
-	Buy List*
+	SellList*
+	BuyList*
 	Name
 	#username?
-	email address
+	Email
 	# preferred method of contact?
+	Authenticated
