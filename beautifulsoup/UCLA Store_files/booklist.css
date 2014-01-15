@@ -1,0 +1,955 @@
+/**************************************************************
+CHANGE LOG
+2012-01-04 - Adam Conley (DSI)
+    Added TermDisplayMessage styling
+    Added variant column styling
+2012-02-15 - Adam Conley (DSI)
+    Added styling for selected td.productcell borders and padding to prevent problems with sub-tables
+2012-06-22 - Adam Conley (DSI)
+    #34023 - Added booklist personalization styles
+2012-08-24 - Adam Conley (DSI)
+    #27916 - Added Affiliate Rental styles
+***************************************************************/
+#leftWrap
+{
+    display: none;
+}
+#content
+{
+    float: none;
+    width: auto;
+    margin: 0 0 0 13px;
+    color: #433f3c;
+}
+#breadcrumb
+{
+    display: none;
+}
+.clear
+{
+    clear: both;
+    height: 0;
+    font-size: 0;
+}
+.clear:after
+{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clear
+{
+    display: inline-block;
+}
+.clearfix:after
+{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix
+{
+    display: inline-block;
+}
+
+.bookliststeps {
+	float:left;
+	margin-bottom:10px;
+}
+
+.bookliststep2 {
+    clear:both;
+	margin-top:5px;
+	/*border:thick red solid;*/
+}
+
+.booklist {
+	padding:10px;
+	border:thin gray solid;
+}
+.booklist a {
+	color: #1C75BC;
+}
+.bookliststeps, .bookliststeps2
+{
+    margin: 15px 0px 27px;
+}
+.bookliststeps2
+{
+    background: url(images/booklist/step2.gif) no-repeat left top;
+    width: 539px;
+    height: 38px;
+    text-align: left;
+}
+.bookliststeps2 img
+{
+    height: 38px;
+    width: 192px;
+}
+.booklistleft
+{
+    clear: both;
+    float: left;
+    width: 640px;
+}
+#iewrap
+{
+    float: left;
+    display: inline;
+    position: relative;
+}
+tr.nowrap
+{
+    white-space: nowrap;
+}
+td
+{
+    white-space: inherit;
+}
+.booklistright
+{
+    float: right;
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 300px;
+}
+.pane, .tabs-container
+{
+    border: 1px solid #e1e1e1;
+    background: #fff url(images/booklist/panebg.gif) repeat-x left top;
+    margin: auto;
+}
+.pane
+{
+    width: 95%;
+}
+.booklistleft .pane
+{
+    width: auto;
+}
+.pane h2
+{
+    margin: 4px;
+    color: #433f3c;
+}
+.booklistcontent
+{
+    margin: 4px;
+    border: 1px solid #e1e1e1;
+    background-color: #fff;
+}
+.booklistcontent .inner
+{
+    margin: 1em;
+    font-size: 12px;
+}
+.booklistcontent .info
+{
+    margin: 1em 0 2em;
+}
+.booklistcontent p.title, .overlay p.title
+{
+    font-size: 18px;
+    margin: 0 0 1em;
+}
+.booklistcontent h4
+{
+    font-weight: normal;
+    font-size: 12px;
+    margin: 1em 0 0;
+}
+.termcampus select
+{
+    width: 240px;
+    margin-right: 15px;
+}
+.booklistright h3
+{
+    margin: 0;
+    padding: 0 0 0 12px;
+    font-size: 20px;
+    height: 23px;
+    /*background: #fff url(images/booklist/rightheader.gif) no-repeat top right;*/
+    border: none;
+    color: #6c6864;
+}
+#ctlCourses_CourseList, .cartctl, .booklistright #pnlStudentLogin .inner
+{
+    background: #fff url(images/booklist/rightbg.gif) repeat-y left top;
+    margin-bottom: 2em;
+    border: 0;
+}
+.cartctl
+{
+    zoom: 100%;
+}
+#content a, #content a:active, #content a:link, #content a:visited
+{
+    color: #cc6b00;
+}
+ul.rightList
+{
+    padding: 8px;
+    margin: 0;
+    list-style: none;
+}
+ul.rightList li, .cartctl ul li
+{
+    background: transparent url(images/booklist/righthr.jpg) no-repeat left bottom;
+    padding: 3px;
+}
+#ctlCourses_CourseList div.booklistbutton, .cartctl div.booklistbutton
+{
+    padding: 5px 0px 0px 0px;
+    text-align: left;
+}
+.cartctl .noitems
+{
+    text-align: center;
+    padding: 1em 0;
+}
+.cartctl .inner
+{
+    padding: 5px;
+}
+.cartctl ul
+{
+    list-style: none;
+    font-size: 11px;
+    margin: 8px;
+    padding: 0;
+}
+.cartctl ul li
+{
+    zoom: 100%;
+}
+#content .cartctl .ProductNameText a, #content .cartctl .ProductNameText a:link, #content .cartctl .ProductNameText a:visited
+{
+    color: #433f3c !important;
+}
+.cartctl .remove
+{
+    float: left;
+    width: 6em;
+}
+.cartctl .subtotals
+{
+    float: right;
+    text-align: right;
+}
+.cartctl div.subtotals
+{
+    width: 7em;
+    font-weight: 700;
+}
+.cartctl table.subtotals
+{
+    font-size: 13px !important;
+    margin-right: 8px;
+}
+.cartctl table.subtotals .prices
+{
+    font-weight: 700;
+}
+.cartctl .inner .inner
+{
+    margin: 0 0 3px 8px;
+}
+.booklistright #pnlStudentLogin .title
+{
+    font-size: 12px;
+    color: #cc6b00;
+    cursor: pointer;
+}
+.booklistright #pnlStudentLogin .inner
+{
+    display: none;
+}
+.printable 
+{
+    text-align: left;
+}
+.printable .cartctl
+{
+    width: 200px;
+    background-image: none;
+}
+.printable .booklistright h3
+{
+    border-bottom: 2px solid #6c6864;
+    background-image: none;
+}
+.loginbutton
+{
+    margin-top: 1em;
+}
+input.disabled
+{
+    opacity: .4;
+    cursor: default;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+}
+.addtocourselist
+{
+    margin-top: 1em;
+    text-align: right;
+}
+.booklistright #pnlStudentLogin
+{
+    width: auto;
+}
+body.popup 
+{
+    text-align: left;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+div.overlay
+{
+    text-align: left;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 5px 20px;
+}
+.overlayoptions
+{
+    margin: 1em 0 0 5em;
+}
+.overlay .btnOverlayContinue
+{
+    margin-top: 1em;
+}
+.overlay table td
+{
+    padding: .5em 0;
+}
+.printable .productoverlay
+{
+    border: 0;
+    position: static;
+    width: auto;
+    display: block;
+}
+.printoptions
+{
+    float: right;
+    width: 20em;
+    top: 10px;
+    border: 1px solid #a0a0a0;
+    line-height: 1.5em;
+}
+.printoptions .inner
+{
+    margin: .5em;
+}
+.printoptions h5
+{
+    font-weight: 400;
+    font-size: 14px;
+    margin: 10px;
+}
+.printable .booklistright, .printable .booklistleft
+{
+    float: none;
+    width: auto;
+}
+.tabs-container h3
+{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    color: #433f3c;
+    font-size: 16px;
+    margin-bottom:5px;
+}
+.tabs-container .products
+{
+    width: 600px;
+}
+
+/* Width of booklist selector  */
+table.books
+{
+    border: 1px solid #ebebeb;
+    margin: 1em 0;
+    width: 600px !important;
+}
+.tabs-container .products table.books
+{
+    color: #433f3c;
+}
+table.books th
+{
+    text-align: center;
+    background-color: #ebebeb;
+    padding: 3px;
+    font-size: 12px;
+}
+table.books th.error
+{
+    line-height: 1.1em;
+}
+table.books th.addcart
+{
+    text-align: left;
+}
+table.books .unselect
+{
+    padding: 3px 8px 3px 3px;
+}
+table.books th h3
+{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+.books td
+{
+    padding: 4px 0;
+}
+.books td.first
+{
+    padding-left: 4px;
+}
+.books td.last
+{
+    /* padding-right: 4px;*/
+}
+.books tr.product.selected td.productcell
+{
+    border: 0 solid #faea34;
+    border-top-width: 4px;
+    border-bottom-width: 4px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.books tr.product.alt.selected td, .books tr.product.selected td
+{
+    background-color: #fffcd5;
+}
+.books tr.selected td.first.productcell
+{
+    border-left-width: 4px;
+    padding-left: 0;
+}
+.books tr.selected td.last.productcell
+{
+    border-right-width: 4px;
+    padding-right: 0;
+}
+.books tr.selected td.last.unselect
+{
+    padding-right: 4px;
+}
+.books tr.product.alt td
+{
+    background-color: #fef5ed;
+}
+.books tr.product.alt .productoverlay td, .books tr.product .productoverlay td, .books tr.product.selected .productoverlay td
+{
+    background-color: #fff;
+    border: 0;
+    padding: 3px;
+}
+.unselect
+{
+    font-size: 24px;
+    text-align: center;
+    font-weight: 700;
+    width: 65px;
+}
+#content .unselect a, #content .unselect a :hover
+{
+    color: #ebebeb !important;
+}
+#content .selected .unselect a
+{
+    color: red !important;
+}
+#content .selected .unselect a:hover
+{
+    color: #ffad00 !important;
+}
+.tabs-container .booklistbutton
+{
+    text-align: right;
+    margin-top: 1em;
+}
+.notes
+{
+    font-style: italic;
+}
+div.notes
+{
+    margin: 1em 0;
+}
+.notes h4
+{
+    margin: 0 0 .3em;
+    padding: 0;
+}
+.info
+{
+    font-size: 12px;
+    margin-right: .5em;
+}
+.infobackdrop
+{
+    position: relative;
+    z-index: 0;
+}
+.productoverlay
+{
+    left: 30px;
+    top: 15px;
+    z-index: 20;
+    position: absolute;
+    display: none;
+    width: 360px;
+}
+.productoverlay table
+{
+    background-color: #fff;
+    border: 1px solid #929292;
+    padding: 0 5px 0 10px;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    width: 100%;
+}
+.productoverlay .top
+{
+    background: transparent url(images/booklist/productoverlay-top.gif) no-repeat left bottom;
+    height: 6px;
+}
+.productoverlay .bottom
+{
+    background: transparent url(images/booklist/productoverlay-bottom.gif) no-repeat left top;
+    height: 6px;
+}
+.productoverlay a.close
+{
+    float: right;
+}
+.printable .productoverlay .top, .printable .productoverlay .bottom
+{
+    display: none;
+}
+.printable .productoverlay table
+{
+    border: 0;
+}
+.printable .productoverlay
+{
+    width: auto;
+}
+.books td .addcartform, td.subs
+{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 2em;
+}
+td.subs 
+{
+    padding: 0px 0px 0px 20px;
+}
+.subs 
+{
+    display:none;
+}
+.addcartform .VariantPrice, .addcartform .SalePrice
+{
+    color: #cc6b00;
+}
+@media projection,screen
+{
+    .tabs-hide
+    {
+        display: none;
+    }
+}
+@media print
+{
+    .tabs-nav
+    {
+        display: none;
+    }
+    .modelink, #booklistdisplayoptions
+    {
+        display:none;
+    }
+}
+
+/* AJC - 2011-03-08 - Added width to booklisttabs to match product width so tabs don't push cart down to the bottom */
+#booklisttabs 
+{
+    width: 600px;
+}
+
+.booklist .tabs-nav
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.tabs-nav:after
+{
+    display: block;
+    clear: both;
+    content: " ";
+}
+.tabs-nav li
+{
+    float: left;
+    margin: 0;
+    padding-right: 1px;
+    background-color: #fff;
+    min-width: 84px;
+    text-align: center;
+    cursor: pointer;
+}
+.tabs-nav a
+{
+    background: transparent url(images/booklist/tabl.gif) no-repeat left top;
+}
+.tabs-nav a span
+{
+    display: block;
+    background: transparent url(images/booklist/tabr.gif) no-repeat right top;
+}
+.tabs-nav a#allcoursestab
+{
+    background-image: url(images/booklist/tab-all-l.gif);
+}
+.tabs-nav a#allcoursestab span
+{
+    background-image: url(images/booklist/tab-all-r.gif);
+}
+#content .tabs-nav a
+{
+    position: relative;
+    top: 0;
+    z-index: 2;
+    padding-left: 0;
+    color: #433f3c;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    display: block;
+}
+#content .tabs-nav .tabs-selected a
+{
+    color: #cc6b00;
+}
+.tabs-nav .tabs-selected a, .tabs-nav a:hover, .tabs-nav a:focus, .tabs-nav a:active
+{
+    background-image: url(images/booklist/tab-sel-l.gif);
+    outline: 0;
+}
+.tabs-nav a span
+{
+    width: 64px;
+    min-width: 64px;
+    height: 19px;
+    min-height: 19px;
+    padding: 3px 10px 0;
+    text-align: center;
+    display: block;
+}
+* > .tabs-nav a span
+{
+    width: auto;
+    height: auto;
+}
+.tabs-nav .tabs-selected, .tabs-nav .tabs-selected a
+{
+    cursor: normal;
+}
+.tabs-nav .tabs-selected a span, .tabs-nav a:hover span, .tabs-nav a:focus span, .tabs-nav a:active span
+{
+    background-image: url(images/booklist/tab-sel-r.gif);
+}
+.tabs-nav .tabs-selected a:link, .tabs-nav .tabs-selected a:visited, .tabs-nav .tabs-disabled a:link, .tabs-nav .tabs-disabled a:visited
+{
+    cursor: text;
+}
+.tabs-nav a:hover, .tabs-nav a:focus, .tabs-nav a:active
+{
+    cursor: pointer;
+}
+.tabs-nav .tabs-disabled
+{
+    opacity: .4;
+}
+* html .booklist .tabs-nav
+{
+    display: inline-block;
+    margin-bottom: 0;
+}
+*:first-child + html .booklist .tabs-nav
+{
+    display: inline-block;
+    margin-bottom: 0;
+}
+.tabs-container
+{
+    margin-top: 0;
+    clear: both;
+    padding: 6px;
+}
+.tabs-loading em
+{
+    padding: 0 0 0 20px;
+    background: url(loading.gif) no-repeat 0 50%;
+}
+.booklist h1
+{
+    margin-top: 0;
+}
+.booklist .infocopy
+{
+    margin: 1em;
+}
+.booklist ul, ul.booklist
+{
+    list-style: none;
+    padding: 0;
+    margin: auto 0;
+}
+.booklist dd, .booklist dt
+{
+    float: left;
+    margin: 0;
+    font-size: 12px;
+}
+.booklist dd
+{
+    padding: 0 1em 0 .5em;
+}
+.booklist ul.Products li.product
+{
+    border-top: 1px solid #A9A9A9;
+    background: transparent url(images/booklist-productbg.gif) repeat-y;
+    width: 673px;
+    margin-top: .5em;
+}
+.booklist ul.Products li.product table
+{
+    margin: 5px 5px 0;
+    width: 663px;
+}
+.booklist ul.Products li.product .productfooter
+{
+    background: transparent url(images/booklist-productfooter.gif);
+    width: 673px;
+    height: 19px;
+}
+.booklist .ProductNameText
+{
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: .25em;
+}
+.booklist .product .info
+{
+    width: 300px;
+}
+
+.booklist div.addcartform
+{
+    line-height: 2em;
+}
+.booklist .variants li
+{
+    margin: 0 0 .5em;
+    padding: .3em;
+    background-color: #e0e0e0;
+}
+.booklist .variants li form
+{
+    text-align: right;
+}
+.booklist .variants li a.incart
+{
+    display: block;
+    font-weight: 700;
+    text-align: center;
+    margin: 1em 0;
+    font-size: 1.1em;
+}
+.booklist .req, .booklist .opt
+{
+    font-weight: 700;
+}
+.booklist .nobooks
+{
+    margin: 2em;
+}
+.modelink
+{
+    text-align: right;
+    margin-top: .5em;
+    font-weight: 700;
+    line-height: 16px;
+}
+.modelink a
+{
+    color: #09243c;
+    text-decoration: none;
+}
+.printable .booklist ul.Products li.product
+{
+    background: transparent;
+    border: 1px solid #A9A9A9;
+    width: auto;
+}
+.printable .booklist ul.Products li.product .productfooter
+{
+    display: none;
+}
+.printable .booklist ul.Products li.product table
+{
+    width: 95%;
+    padding-top: 3px;
+}
+.booklistheader
+{
+    font-weight: bold;
+    font-size: larger;
+    padding-bottom: 10px;
+    width: 80%;
+}
+
+.courseheader
+{
+    background:#ffffff url(images/booklist/tabl.gif);
+    background-repeat:repeat;
+}
+.courseheader H3 
+{
+    padding-top: 0em;
+}
+.substitutionlink 
+{
+    font-weight:bold;
+    text-align:right;
+}
+.booklistaddtocart
+{
+    text-align:right;
+    margin-bottom: 10px;
+	padding-right:20px;	
+	padding-top:10px;
+}
+.booklist .inner
+{
+    margin: 1em 0em;
+}
+.booklist .groupheader
+{
+    clear:both; 
+    font-weight:600; 
+    font-size:12;
+}
+.booklist .outofstockmessage 
+{
+    font-size: 9px;
+}
+
+.booklist .expecteddate
+{
+    padding: 0px 0px 0px 25px;
+    font-size: 9px;
+    margin: 0px;
+    line-height: 1em;
+}
+table.books .TermDisplayMessage 
+{
+    font-weight: bold;
+    color: #ff0000;
+}
+table.books td.variant
+{
+    width: 200px;
+}
+table.books td.variant.displayonly 
+{
+    width: 200px;
+}
+
+/* AJC - 2012-06-22 - Added booklist personalization styles */
+.BooklistPersonalization 
+{
+    padding: 15px;
+    border: 2px solid #4776BD;
+    width: 90%;
+    margin: 0px auto 15px auto;
+    font-size:1.1em;
+}
+
+.BooklistPersonalization .errorLg 
+{
+    padding-bottom: 5px;
+    display:block;
+}
+
+/* AJC - 2012-08-24 - Added Affiliate Rental styles */
+#rentalOptionsContainer 
+{
+    border: thin solid #C0C0C0; 
+    background-color: #f7f7f7;
+    padding: 3px;
+}
+#rentalImageCell
+{
+    vertical-align: middle;
+    padding: 5px 10px;
+}
+#rentalClose
+{
+    margin-top: 10px;
+    text-align: right;
+}
+#rentalViewCart 
+{
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.rentalOptionFee 
+{
+    width: 60px;
+    text-align: right;
+    margin-right: 20px;
+}
+
+#rentalTitle 
+{
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 3px 0px;
+}
+
+#rentalSKU
+{
+    font-size: 0.9em;
+    padding: 2px 0px;
+}
+.rentalLink 
+{
+    font-size: 0.9em;
+}
+.booklistRentalCart 
+{
+    font-size: 1.2em;
+    text-align: center;
+}

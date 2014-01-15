@@ -1,0 +1,378 @@
+﻿/**************************************************
+CHANGE LOG
+2012-04-09 - Adam Conley (DSI)
+    #34294 - Added Pickup contact info
+2012-08-09 - Adam Conley (DSI)
+    #26348 - SAML Authentication Popup Styles
+2012-12-21 - Adam Conley (DSI)
+    Added classes for Payment Methods on checkoutpayment.aspx
+2013-04-08 - Adam Conley (DSI)
+    Added Preorder Styles
+2013-04-24 - Adam Conley (DSI)
+    Modifications to rental agreement styles to accommodate new columns
+2013-06-12 - Rebecca Patti
+    Added Collateral Styles for Riskless Rentals
+2013-07-31 - Adam Conley (DSI)
+    Modifications in how shipping pickup contact data is styled
+***************************************************/
+#rbsratexlogo 
+{
+    text-align:center;
+    margin-top: 10px;
+}
+
+/****** ORDER HISTORY *******/
+.orderhistoryline, 
+.orderhistorylinealt
+{
+    border-top: 1px solid #444444;
+    margin: 0px;
+    padding: 8px;
+}
+
+.orderhistoryline 
+{
+    background-color: #ffffff;
+}
+
+.orderhistorylinealt
+{
+    background-color: #efefe0;
+}
+
+.orderhistoryline.first
+{
+    border-top-width: 0px;
+}
+
+.orderhistoryline.ordernumber, 
+.orderhistorylinealt.ordernumber 
+{
+    width: 180px;
+    line-height: 1.4em;
+}
+
+.orderhistoryordernumber 
+{
+    font-size:1.2em;
+    font-weight:bold;
+}
+
+.orderhistoryshipheader 
+{
+    font-size:1.1em;
+    background-color:#fff; 
+    border:1px solid #bbb;
+    border-bottom-width:0px;
+    padding:3px;
+    margin:5px 0px 0px;
+    border-collapse:collapse
+}
+
+.orderhistorylinks 
+{
+    font-size: 0.9em;
+}
+
+.orderhistoryshipstatus, 
+.orderhistorytrackinglabel
+{
+    font-weight:bold;
+}
+
+.orderhistoryshipdetail
+{
+    width:100%;
+    border:1px solid #bbb; 
+    margin: 0px 0px 5px;
+    border-collapse:collapse;
+}
+
+.orderhistoryshipdetail td 
+{
+    padding: 3px;
+}
+
+.orderhistoryshipdetailheader
+{
+    font-weight:bold;
+    color:#fff;
+    background-color:#006bb6;
+}
+
+.orderhistoryshipline td, 
+.orderhistoryshiplinealt td, 
+.orderhistoryshipdetailheader td
+{
+    border: 1px solid #bbbbbb;
+}
+
+.orderhistoryshipline
+{
+    background-color: #ffffff;
+}
+.orderhistoryshiplinealt
+{
+    background-color: #eeeeee;
+}
+
+.orderhistoryshiplineqty 
+{
+    width:35px;
+}
+
+.orderhistoryshiplineitem 
+{
+    width: 100px;
+}
+
+.orderhistoryshiplinestat 
+{
+    width: 130px;
+}
+/****** END ORDER HISTORY *******/
+
+/****** RENTAL AGREEMENT *******/
+.RentalAgreementHeader {margin-top: 15px; border: 1px solid #444; border-width: 1px 0px; padding: 3px 0px;}
+.RentalAgreementText, .RentalAgreementInfo {margin: 5px 0px;}
+.RentalAgreementReturnDate {font-weight: bold; margin: 5px 0px;}
+.RentalAgreementList {margin: 10px 0px;}
+.RentalAgreementList td {border: 0px; padding: 0px 5px; vertical-align: top;}
+.RentalAgreementList td.RAProductName {width: 185px;}
+.RentalAgreementList td.RAQty {width: 25px;text-align: center;}
+.RentalAgreementList td.RAPrice {width: 50px;text-align: center;}
+.RentalAgreementList td.RAUnreturnedFee {width: 80px;text-align: center;}
+.RentalAgreementList td.RADamageFee {width: 50px;text-align: center;}
+.RentalAgreementList td.RAPurchaseFee {width: 50px;text-align: center;}
+.RentalAgreementList td.RACheckbox {text-align: center; width: 75px;}
+.RentalAgreementList tr.RAProduct td {padding-top: 5px;border-top:1px solid black}
+.RentalAgreementList tr.RAHeader td {font-weight: bold; vertical-align: bottom; }
+.RentalAgreementList td.RADelete { text-align: center; width: 75px; }
+.RentalAgreementList td.RADelete a {text-decoration: none; font-weight: bold; color: #ff0000 !important; font-size: 2.0em; line-height: 0.6em }
+.RentalAgreementButtons {text-align: center; margin-top: 20px;}
+.RentalAgreementNoRentals {margin: 20px 0px; font-size: 1.2em; font-weight: bold}
+.RentalAgreementList tr.RASubs td {padding-bottom: 10px}
+.RentalAgreementList td.RASubsNote {text-align: right; font-weight:bold;}
+/****** END RENTAL AGREEMENT *******/
+
+/****** SHIPPING BOX NUMBER *******/
+.shippingboxnumberlabel {font-weight: bold}
+.shippingmethoddesc {padding-left: 30px; font-style:italic;line-height:1.4em}
+.shippingboxnumber {padding-left: 30px;}
+/****** END SHIPPING BOX NUMBER *******/
+
+/****** COLLATERAL *******/
+.CollateralHeader {margin-top: 15px; font-size: 1.2em;  font-weight:bold; padding: 3px 0px;}
+.CollateralContent {margin: 5px 0px;}
+.CollateralButtons {text-align: center; margin-top: 20px;}
+/****** END COLLATERAL ******/
+
+td.cartimg 
+{
+    width: 30%;
+}
+.cartnewbookprice 
+{
+    padding-top: 25px;
+}
+.newbooktotal
+{
+    padding: 10px 30px 0px 0px;
+    font-weight: bold;
+    text-align: right;
+}
+.bestsellerrow img {vertical-align: middle}
+.productimagecell 
+{
+	width: 405px;
+  	height: 405px;
+}
+
+/**********************************************/
+/* AJC - 2012-04-09 - Pickup contact info */
+div.shippingpickup { padding-left: 30px }
+input.shippingpickupinput { width: 120px; margin: 1px 8px 0px 4px; }
+input.disabled { background-color: #eee }
+/**********************************************/
+
+/**********************************************/
+/* AJC - 2012-08-09 - SAML Authentication Popup Styles
+/**********************************************/
+.studentcardauthtop 
+{
+    padding: 2px; 
+    border-bottom: 1px solid #ddd;
+    text-align: right;
+    background-color: #f9f9f9;
+}
+.studentcardauthtop a#studentcardauthclose 
+{
+    display:block;
+    margin-right: 5px;
+    background: transparent url(images/icons/delete.png) right no-repeat;
+    height:19px;
+    line-height: 19px;
+    padding-right: 22px;
+    text-decoration: none;
+}
+.studentcardauthinfo 
+{
+    padding: 4px;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.1em;
+}
+
+.ProductNameText 
+{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.ecselectedcategory 
+{
+    font-weight: bold;
+}
+/* AJC - 2012-12-21 - Added classes for Payment Methods on checkoutpayment.aspx */
+.pmnote 
+{
+    padding: 2px 0px 0px 20px;
+    font-style: italic;
+}
+.pmoption 
+{
+    padding-top: 5px;
+    width: 120px;
+    white-space: nowrap;
+}
+
+/* AJC - 2013-01-22 - #40439 - Added Checkout Payment Page header text for WCAG and 508, hidden on browser */
+.checkoutpaymentheader 
+{
+    display:none;
+}
+
+/************************************************
+ Preorder Styles 
+*************************************************/
+.preorderoptionstitle 
+{
+    font-weight:bold;
+    font-size: 1.2em;
+    padding-bottom: 10px;
+}
+
+.preorderoptionsheader
+{
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.preorderoptionsblock 
+{
+    padding-bottom: 15px;
+}
+table.preordersubs td
+{
+    padding-right: 20px;
+}
+table.preordersubs td input
+{
+    width: 40px;
+}
+
+.preorderhistorystatus 
+{
+    font-weight:bold;
+    font-size: 1.1em;
+    border-collapse: collapse;
+    background-color:#fff; 
+    border:1px solid #bbb;
+    border-bottom-width:0px;
+    padding:3px;
+    margin:5px 0px 0px;
+}
+
+.preorderhistoryheader 
+{
+    background-color: #006BB6;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-collapse: collapse;
+    padding: 4px 3px;
+    border:1px solid #bbb;
+    border-bottom-width:0px;
+}
+
+.preorderhistorycourse
+{
+    padding: 4px 0px 0px 1em;
+    border: 1px solid #bbb;
+    border-bottom-width:0px;
+    background-color: #fff;
+}
+
+.preorderhistorycourse div 
+{
+    padding-bottom: 4px;
+}
+
+.preorderhistoryoptions
+{
+    padding: 4px 0px 0px 1em;
+    border: 1px solid #bbb;
+    background-color: #fff;
+}
+.preorderhistoryoptions div
+{
+    padding-bottom: 4px;
+}
+.preorderediting 
+{
+    padding: 5px 0px;
+    font-size: 1.1em;
+}
+.preorderediting span 
+{
+    font-weight: bold;
+}
+ 
+.preordermergeexisting, .preordermergechanges 
+{
+    width: 300px;
+    float:left;
+}
+.preordermergebuttons 
+{
+    clear:both;
+    padding: 15px 0px 0px 150px;
+}
+
+.preordermergeinfo 
+{
+    clear: both;
+    padding-bottom: 15px;
+}
+
+.preorderchange 
+{
+    color: #dd0000;
+}
+/************************************************/
+
+/**********************************************/
+/* AJC - 2013-07-30 - Reformat Pickup contact data */
+div.shippingpickupheader { width: 420px; padding: 4px 0px;}
+div.shippingpickupusebilling 
+{
+    float:right;
+    text-align:left;
+    width: 150px;
+}
+div.shippingpickupitem > label.shippingpickuplabel 
+{
+    float:left;
+    width: 120px;
+    text-align: right;
+    padding-top: 4px;
+    display: block;
+}
+/**********************************************/
