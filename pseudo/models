@@ -1,11 +1,11 @@
 BookSuper:
 	Title = TextField
 	Author = TextField
-	SKU = int (pk)
 
 EditionedBook:
 	Edition = Integer # what about international versions?
 	Description = TextField
+	SKU = int (pk)
 	DownloadLinks = ManyToMany(DownloadLink)
 
 DownloadLink:
