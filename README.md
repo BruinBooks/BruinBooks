@@ -1,7 +1,7 @@
 BruinBooks
 ==========
 
-Scraping with [Beautiful Soup](http://www.crummy.com/software/BeautifulSoup/)
+Scraping with [Beautiful Soup](http://www.crummy.com/software/BeautifulSoup/).
 
 Todo
 ====
