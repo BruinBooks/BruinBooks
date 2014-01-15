@@ -1,6 +1,7 @@
 BookSuper:
 	Title = TextField
 	Author = TextField
+	SKU = int (pk)
 
 EditionedBook:
 	Edition = Integer # what about international versions?
