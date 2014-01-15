@@ -1,6 +1,6 @@
 BookSuper:
 	Title = TextField
-	Author = TextField
+	Author(s?) = TextField
 
 EditionedBook:
 	Edition = Integer # what about international versions?
