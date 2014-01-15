@@ -1,0 +1,229 @@
+
+/*
+	Load CSS before JavaScript
+*/
+
+/*
+	Slides container
+	Important:
+	Set the width of your slides container
+	Set to display none, prevents content flash
+*/
+* { 
+	border:none;
+	outline:none;
+}
+
+#slides .slides_container {
+	width:941px;
+	height:390px;
+	/*display:none;*/
+	position:relative;
+	
+}
+
+.slides_container {
+	text-align:center;
+	margin:auto;
+}
+
+.pagination li {
+	display:inline;
+	z-index: 888;
+	
+}
+
+#slides .pagination {
+	text-indent: -888888px;
+	position:absolute;
+	top: 504px;
+	left: 23px;
+	z-index: 889;
+	width:150px;
+}
+
+
+.pagination li a {
+	display:block;
+	width:18px;
+	height:18px;
+	background-image:url(/jscripts/img/paginator.png);
+	float:left;
+	overflow:hidden;
+}
+
+.pagination li.current a { background-image:url(/jscripts/img/paginatorCur.png); }
+
+
+
+hr {
+	background:#efefef;
+}
+
+
+#slides .right-button {
+	position:absolute;
+	top:310px;
+	left:912px;
+	width:30px;
+	height:30px;
+	display:block;
+	z-index:188;
+	text-indent: -888888px;
+	cursor:pointer;
+	background-image: url(/jscripts/img/arrows.png);
+	background-repeat: no-repeat;
+	background-position: -30px;
+}
+
+
+#slides .left-button {
+	position:absolute;
+	top:310px;
+	left:20px;
+	width:30px;
+	height:30px;
+	display:block;
+	z-index:188;
+	background:url(/jscripts/img/arrows.png) no-repeat;
+	text-indent: -888888px;
+	cursor:pointer;
+}
+
+.paginCust {
+	height: 15px;
+	width: 15px;
+	text-indent: -888888px;
+	margin:3px;
+}
+
+
+.paginCust a {
+	height: 15px;
+	width: 15px;	
+}
+
+
+
+
+/*---------------------------------
+COMPUTER SLIDER STYLES
+----------------------------------*/
+
+#compstoreSlider {
+	width:734px;
+	height:370px;
+	clear:both;
+	margin-left:7px;
+	padding-top:15px;
+	margin-bottom:15px;
+}
+
+#compstoreSlider #slides, #compstoreSlider #slides .slides_container {
+	width:734px;
+	height:370px;
+}
+
+#compstoreSlider #slides .left-button {
+	position:absolute;
+	top:330px;
+	left:220px;
+	width:30px;
+	height:30px;
+	display:block;
+	z-index:188;
+	background:url(/jscripts/img/arrows.png) no-repeat;
+	text-indent: -888888px;
+	cursor:pointer;
+}
+
+#compstoreSlider #slides .right-button {
+	position:absolute;
+	top:330px;
+	left:900px;
+	width:30px;
+	height:30px;
+	display:block;
+	z-index:188;
+	text-indent: -888888px;
+	cursor:pointer;
+	background-image: url(/jscripts/img/arrows.png);
+	background-repeat: no-repeat;
+	background-position: -30px;
+}
+
+#compstoreSlider #slides .pagination {
+	text-indent: -888888px;
+	position:absolute;
+	left:218px;
+	z-index: 889;
+	width:150px;
+}
+
+
+/*---------------------------------
+APPAREL SLIDER STYLES
+----------------------------------*/
+
+
+#apparelSlider {
+	width:734px;
+	height:370px;
+	clear:both;
+	margin-left:2px;
+	padding-top:7px;
+	margin-bottom:7px;
+}
+
+#apparelSlider #slides, #apparelSlider #slides .slides_container {
+	width:734px;
+	height:370px;
+}
+
+#apparelSlider #slides .left-button {
+	position:absolute;
+	top:327px;
+	left:223px;
+	width:30px;
+	height:30px;
+	display:block;
+	z-index:188;
+	background:url(/jscripts/img/arrows.png) no-repeat;
+	text-indent: -888888px;
+	cursor:pointer;
+}
+
+#apparelSlider #slides .right-button {
+	position:absolute;
+	top:327px;
+	left:890px;
+	width:30px;
+	height:30px;
+	display:block;
+	z-index:188;
+	text-indent: -888888px;
+	cursor:pointer;
+	background-image: url(/jscripts/img/arrows.png);
+	background-repeat: no-repeat;
+	background-position: -30px;
+}
+
+#apparelSlider #slides .pagination {
+	text-indent: -888888px;
+	position:absolute;
+	top:496px;
+	left:220px;
+	z-index: 889;
+	width:150px;
+}
+
+#hssSlider #slides .pagination {
+	text-indent: -888888px;
+	position:absolute;
+	top:480px;
+	left:220px;
+	z-index: 889;
+	width:150px;
+}
+
+
